@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() {
+  int i,rem,sum=0,temp,count=0,SI=0,SO=0,lm,rm;
+  for (i=100;i>=100;i++)
+  {
+    rm=i%10;
+    SI=0;
+    SO=0;
+    for(temp=i/10;temp>9;temp=temp/10)
+    {
+      rem=temp%10;
+      SI=SI+rem;
+    }
+    lm=temp;
+  SO=rm+lm;
+  if(SO==SI)
+  {
+    printf("xylem=%d",i);
+    sum=sum+i;
+    printf("sum of first 15 xylem number =%d",sum);
+    count++;
+    
+  if(count==15)
+  break;
+  }}
+
+  return 0;
+}
