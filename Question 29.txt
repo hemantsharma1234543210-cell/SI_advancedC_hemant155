@@ -1,0 +1,18 @@
+//29.Print a half-pyramid of stars (*). 
+#include <stdio.h>
+int main() 
+{
+int i,j,range;
+printf("enter the range=\n");
+scanf("%d",&range);
+for(i=0;i<range;i++)
+{
+  for(j=0;j<=i;j++)
+  {
+    printf("*");
+  }
+  printf("\n");
+}
+    
+  return 0;
+}

@@ -1,0 +1,16 @@
+//26.Reverse a given integer.
+#include <stdio.h>
+int main() 
+{
+  int number,rem,rev=0;
+  printf("enter the number=");
+  scanf("%d",&number);
+  for(int temp=number;temp>0;temp/=10)
+  {
+    rem=temp%10;
+    rev=rev*10+rem;
+  }
+  printf("reverse=%d",rev);
+    
+  return 0;
+}

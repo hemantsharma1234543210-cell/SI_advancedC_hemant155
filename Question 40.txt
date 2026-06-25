@@ -1,0 +1,19 @@
+//40.Delete an element from a specific position.
+#include <stdio.h>
+int main() 
+{
+  int a[7]={1,2,3,4};
+  int size=sizeof(a)/sizeof(a[0]),i,num,position;
+  //printf("enter the number to insert=");
+ // scanf("%d",&num);
+  printf("enter the position");
+  scanf("%d",&position);
+  for(i=position;i<size;i++)
+  {
+    a[i]=a[i+1];
+
+  }
+  for(i=0;i<size;i++)
+  printf("%d",a[i]);
+  return 0;
+}

@@ -1,0 +1,23 @@
+//25.Check if a number is a Strong number 
+#include <stdio.h>
+int main() 
+{
+  int number,i,rem,sum=0,fact=1;
+  printf("enter the number=");
+  scanf("%d",&number);
+  for(int temp=number;temp>0;temp/=10)
+  {
+    rem=temp%10;
+    fact=1;
+    for(i=1;i<=rem;i++)
+    {
+      fact=fact*i;
+      }
+      sum=sum+fact;
+  }
+  if(sum==number)
+  printf("%d is a strong number",number);
+  else
+  printf("%d is not a strong number",number);
+  return 0;
+}

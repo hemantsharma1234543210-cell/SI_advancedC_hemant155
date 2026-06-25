@@ -1,0 +1,14 @@
+//11. Convert days into years, weeks, and days.
+#include <stdio.h>
+int main()
+{
+int days;
+printf("enter number of days\n");
+scanf("%d",&days);
+int years,weeks;
+weeks=days*7;
+years=days*365;
+printf("%d is no. of weeks",weeks);
+printf("%d is no. of years",years);
+    return 0;
+}

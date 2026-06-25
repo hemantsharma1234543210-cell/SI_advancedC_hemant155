@@ -1,0 +1,12 @@
+//  2.    Read an integer/float/char and print it.
+#include <stdio.h>
+int main()
+{
+  int a=10;
+  float b=10.2;
+  char ch='A';
+  printf("%d",a);
+    printf("%f",b);
+      printf("%c",ch);
+  return 0;
+}

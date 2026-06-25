@@ -1,0 +1,17 @@
+//8.Check if a number is even or odd (using modulus operator).
+#include <stdio.h>
+int main()
+{
+  int number;
+  printf("enter the to check even or odd\n");
+  scanf("%d",&number);
+  if(number%2==0)
+  {
+  printf("%d is an even number",number);
+  }
+  else
+  {
+    printf("%d is an odd number",number);
+  }
+  return 0;
+}
