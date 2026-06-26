@@ -1,0 +1,24 @@
+//56.Concatenate two strings without strcat.
+#include <stdio.h>
+int main() 
+{
+char a[8]="Hello";
+char b[5]="world";
+int size1=sizeof(a)/sizeof(a[0]),length=0,size2;
+size2=sizeof(b)/sizeof(b[0]);
+int size=size1+size2,j=0,k=0;
+char c[size];
+for(int i=0;i<size1;i++)
+{
+  c[j]=a[i];
+  j++;
+}
+for(int i=size1;i<size;i++)
+{
+  c[i]=[k];
+  k++;
+}
+for(int j=0;j<size;j++)
+printf("%c",c[j]);
+  return 0;
+}

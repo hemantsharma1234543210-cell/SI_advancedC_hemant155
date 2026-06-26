@@ -1,0 +1,28 @@
+//60.Count the number of vowels, consonants, digits, and spaces in a string.
+#include <stdio.h>
+int main() 
+{
+char a[]="hello world12";
+int size1=sizeof(a)/sizeof(a[0]);
+int c_vowel=0,c_conso=0,c_digit=0,c_space=0;
+for(int i=0;i<size1;i++)
+{
+  if(a[i]==' ')
+  c_space++;
+  else if(a[i]>='0'&&a[i]<='9')
+  c_digit++;
+  if(a[i]>='a'&&a[i]<='z'||a[i]>='A'&&a[i]<='Z')
+  {
+  if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'||a[i]=='A'||a[i]=='E'||a[i]=='I'||a[i]=='O'||a[i]=='U')
+  c_vowel++;
+  else 
+  c_conso++;
+  }
+}
+  printf("total number of space=%d\n",c_space);
+  printf("total number of digit=%d\n",c_digit);
+  printf("total number of vowel=%d\n",c_vowel);
+  printf("total number of consonant=%d",c_conso);
+
+  return 0;
+}

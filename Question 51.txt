@@ -1,0 +1,36 @@
+//51.Check if a matrix is symmetric.
+#include <stdio.h>
+int main() 
+{
+int a[5][5],b[5][5],sum=0,c=0;
+
+for(int i=0;i<3;i++)
+{
+  for(int j=0;j<3;j++)
+  {
+    scanf("%d",&a[i][j]);
+  }
+}
+
+for(int i=0;i<3;i++)
+{
+  for(int j=0;j<3;j++)
+  {
+    b[i][j]=a[j][i];
+        if(b[i][j]!=a[i][j])
+    {
+      c=1;
+      break;
+    }
+    
+}
+  if(c!=0)
+  break;
+  }
+  if(c==1)
+  printf("not a symmetric matrix");
+  else
+  printf(" symmetric matrix");
+
+  return 0;
+}

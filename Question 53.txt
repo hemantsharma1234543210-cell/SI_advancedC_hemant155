@@ -1,0 +1,46 @@
+//53.Check if two matrices are equal.
+#include <stdio.h>
+int main() 
+{
+int a[5][5],b[5][5],c=0;
+
+for(int i=0;i<3;i++)
+{
+  for(int j=0;j<3;j++)
+  {
+    scanf("%d",&a[i][j]);
+  }
+}
+for(int i=0;i<3;i++)
+{
+
+  for(int j=0;j<3;j++)
+  {
+    scanf("%d",&b[i][j]);
+  }
+}
+
+for(int i=0;i<3;i++)
+{
+    c=0;
+  for(int j=0;j<3;j++)
+  {
+    if(a[i][j]!=b[i][j]);
+    {
+      c=1;
+      break;
+    }
+    
+  }
+  if(c==1)
+  break;
+
+}
+if(c==0)
+printf("equal matrix");
+else
+printf("not a equal matrix");
+
+
+  return 0;
+}
